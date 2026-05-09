@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net9.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<Authors>Thomas James</Authors>
@@ -10,19 +10,25 @@
 			Simple error logging library that can send emails and/or log to a txt file
 		</Description>
 		<PackageTags>Logging, Error, Email, Log File</PackageTags>
-		<PackageReleaseNotes>V9.0.0 now runs on .NET 9 see github for more details</PackageReleaseNotes>
+		<PackageReleaseNotes>V10.0.0 now runs on .NET 10 see github for more details</PackageReleaseNotes>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Version>9.0.0</Version>
+		<Version>10.0.0</Version>
 		<PackageId>TPJ.Logging</PackageId>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<RepositoryUrl>https://github.com/TPJ11/TPJ.Logging</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<IncludeXmlDocumentation>true</IncludeXmlDocumentation>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.7" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.7" />
+		<PackageReference Include="TPJ.Email" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Include="..\README.md" Pack="true" PackagePath="\" />
 		<None Include="..\LICENSE.txt" Pack="true" PackagePath="\" />
 	</ItemGroup>

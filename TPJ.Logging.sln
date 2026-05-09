@@ -1,13 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.4.33213.308
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11626.88 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPJ.Logging", "TPJ.Logging\TPJ.Logging.csproj", "{DA646F00-B229-46D0-ABA2-FBCCE5B32C71}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPJ.LoggingTest", "TPJ.LoggingTest\TPJ.LoggingTest.csproj", "{E4AD4AD0-90C8-4BC5-82BF-5D029CA632A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPJ.LoggingTestAPI", "TPJ.LoggingTestAPI\TPJ.LoggingTestAPI.csproj", "{9FD1D2E3-9FC2-438E-AEEC-F8DB454F4DF1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FA42E596-EB70-43A6-B924-DDD06F7E3BAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3C087FFF-FE3B-4B9F-A860-2826BC9B35E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{75AC15DA-5304-424F-AC64-A50015AD8785}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,13 +30,13 @@ Global
 		{E4AD4AD0-90C8-4BC5-82BF-5D029CA632A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4AD4AD0-90C8-4BC5-82BF-5D029CA632A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4AD4AD0-90C8-4BC5-82BF-5D029CA632A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FD1D2E3-9FC2-438E-AEEC-F8DB454F4DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FD1D2E3-9FC2-438E-AEEC-F8DB454F4DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FD1D2E3-9FC2-438E-AEEC-F8DB454F4DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FD1D2E3-9FC2-438E-AEEC-F8DB454F4DF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA646F00-B229-46D0-ABA2-FBCCE5B32C71} = {FA42E596-EB70-43A6-B924-DDD06F7E3BAB}
+		{E4AD4AD0-90C8-4BC5-82BF-5D029CA632A1} = {3C087FFF-FE3B-4B9F-A860-2826BC9B35E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DEE95B5-2839-4730-A5D1-20AB601079C5}
